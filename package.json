@@ -2,10 +2,12 @@
   "name": "todo-ai",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "gen:db": "drizzle-kit generate",
-    "mig:db": "drizzle-kit migrate"
+    "mig:db": "drizzle-kit migrate",
+    "studio": "drizzle-kit studio"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +16,7 @@
     "dotenv": "^16.4.7",
     "drizzle-orm": "^0.39.1",
     "express": "^4.21.2",
+    "groq-sdk": "^0.13.0",
     "openai": "^4.81.0",
     "pg": "^8.13.1",
     "readline-sync": "^1.4.10"
